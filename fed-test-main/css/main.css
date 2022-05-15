@@ -1,0 +1,559 @@
+:root {
+    --color-green-positive: 60, 187, 180;
+    --color-yellow-negative: 249, 173, 29;
+    --color-dark-background: rgba(0, 0, 0, .4);
+    --color-darker-background: rgba(0, 0, 0, .6);
+    --color-darker-gray: rgba(51, 51, 51, 1);
+    --color-dark-gray: rgba(70, 70, 70, 1);
+    --color-light-gray: rgba(235, 235, 235, 1);
+    --color-light-background: rgba(255, 255, 255, .4);
+    --color-lighter-background: rgba(255, 255, 255, .8);
+    --color-white: rgba(255, 255, 255, 1);
+    --color-tile:rgba(60, 187, 180, 0.8);
+    --color-yellow: rgba(249, 173, 29, 0.8);
+    --color-gray:#EBEBEB;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    background-color: var(--color-white);
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    overflow-x:clip;
+    
+}
+html>*{
+    font-family: 'Lato', sans-serif;
+font-style: normal;
+}
+
+body {
+    position: relative;
+}
+header{
+    display:flex;
+    position: absolute;
+    right: 13%;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+color:white;
+}
+header>h5{
+    margin-right: 1.5rem;
+    
+}
+.page-title{
+   color:white;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    margin:0;
+    font-weight: 400;
+line-height: 29px;
+}
+.opinion{
+    
+    background-color: var(--color-dark-background) ;
+    backdrop-filter: blur(1.5rem) ;
+      width: 49%;
+      margin-top: 23.2%
+      
+
+}
+.opinion>h5{
+    font-size: 1rem;
+    font-weight: 300;
+    color:white;
+    margin:0;
+    padding-top:1rem;
+    margin-left:1rem;
+
+}
+.opinion>.description{
+    font-weight: 300;
+font-size: 1.25rem;
+line-height: 17px;
+position: relative;
+bottom:auto;
+}
+.opinion>.veredict{
+    font-weight: 700;
+font-size: 1rem;
+line-height: 14px;
+color:white;
+}
+.thumbs{
+    display:flex;
+}
+.thumbsup{
+    background: var(--color-tile);
+    height:32px;
+    width:102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    cursor: pointer;
+}
+.thumbsdown{
+
+background: var(--color-yellow);
+height:32px;
+    width:102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    cursor: pointer;
+}
+.shownPerson{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color:white;
+    margin-left:1rem;
+}
+.info{
+font-weight: 300;
+font-size: 1.25rem;
+line-height: 18px;
+background-color: #EBEBEB;
+    
+    display:flex;
+    height:7.3rem;
+    margin:3rem 170px;
+}
+
+.info>h4{
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 18px;  
+    margin: 1rem 1rem 1rem 15px;
+    
+}
+.previous{
+    font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+margin-left:10.5vw;
+}
+.addchar{
+    background: url("../assets/photos/Rectangle.png");
+    margin:2rem 1rem 1.5rem;
+    width:calc(100% -2rem);
+    height:12rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 9.8%;
+    width: 79%;
+
+}
+.addchar>h1{
+    font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+}
+
+.submit{
+    font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: #333333;
+border:2px solid #333333;
+margin:1rem 3rem;
+height:4rem;
+display:flex;
+align-items:center;
+justify-content:center;
+
+
+}
+.terms, .followUs{
+    font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+color:#464646;
+margin-left: 1rem;
+margin-right: 1rem;
+}
+.followUs{
+    position: relative;
+    top:3.5rem;
+    height:10%;
+   
+}
+.followUs>img{
+    margin-right: 1rem;
+}
+.followUs>h4{
+    margin-bottom: .5rem;
+}
+.Card{
+    display:inline;
+}
+.card-img{
+   position: relative;
+   top:0;
+   height:170px;
+
+   
+}
+.name{
+    position: relative;
+    bottom: 18rem;
+    left: 8%;
+
+
+    z-index: 1;
+    color:white;
+    font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+margin:0 11.3%
+}
+
+.description{
+    font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+position: relative;
+bottom:13vw;
+margin:0 1rem;
+color:white;
+width:55%;
+    margin-left: 19.5%;
+    
+}
+.votesCalc{
+    position: relative;
+   bottom:15.6vw;
+
+display:flex;
+justify-content:space-between;
+width:100%;
+height:3rem;
+color:white;
+}
+.vote{
+    position: relative;
+    bottom:92%;
+    left: 70%;
+    display:flex;
+   
+   
+   
+}
+.positive{
+    display: flex;
+    background-color:var(--color-tile);
+    align-items: center; 
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+padding-left: 1rem;
+
+
+
+   
+}
+.negative{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-yellow);
+    justify-content:right;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+padding-right: 1rem;
+    
+}
+.globalVotes{
+    position: relative;
+    
+    padding:7px;
+    bottom: 14.4rem;
+    
+}
+.vote{
+    margin-left:6.25rem;
+    bottom: 15vw;
+}
+.up{
+    background-color:  var(--color-tile);
+    border:none;
+    display: flex;
+    align-items: center;
+    margin-right:1rem;
+    margin-bottom: 1.5rem;
+}
+.down{
+    background-color:var(--color-yellow);
+    border:none;
+    display: flex;
+    align-items: center;
+    margin-right:1rem;
+    margin-bottom: 1.5rem;
+}
+.voteButton{
+    width: 12.5%;
+    height:4.167rem;
+    border:none;
+    background-color: var(--color-darker-background);
+    color:white;
+    margin-bottom: 1rem;
+    border: 1px solid white
+}
+
+    .innerCard{
+        margin: 0 170px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.0001) 0%, #888888 19.79%, #666666 50%, rgba(51, 51, 51, 0.6) 71.88%);
+        height: 170px;
+        margin-bottom:18px;
+    }
+
+.introSurvey{
+    
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.698864) 0%, rgba(0, 0, 0, 0.0001) 100%),url("https://res.cloudinary.com/dn1jeryp3/image/upload/v1652628405/Zemoga/pope2_bckvha.png");
+     
+    
+    height:58.3rem;
+    
+
+    
+}
+.closingTimer{
+    display:flex;
+    
+
+    
+}
+
+.closing{
+    height:49px ;
+    background-color:var(--color-dark-background);
+    padding: 5px ;
+    margin:0;
+    display:flex;
+    align-items: center;
+    justify-content:right;
+    width:20%;
+    font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+text-align: right;
+text-transform: uppercase;
+color:white;
+}
+   
+.days{
+    height:36px;
+    background:var( --color-light-background);
+    margin:0;
+    padding:11px 6px ;
+    display:flex;
+    align-items: baseline;
+    width: 90%
+}
+.days>h1{
+    font-weight: 300;
+
+
+
+color: #464646;
+}
+.days>.number{
+    font-weight: 400;
+font-size: 1.8rem;
+line-height: 22px;
+color: #464646;
+margin:0;
+}
+.days>h1{
+    margin:0
+}
+
+.speak{
+    
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.625px;
+color:#464646;
+width:200%;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.speak>h2,.speak>h4{
+margin:0;
+display: inline-block;
+
+}
+#speak{
+    font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+}
+.arrow-right{
+    position: absolute;
+    
+    left: 18.5%;
+    top: 10.4%;
+    width: 0; 
+  height: 0; 
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left:transparent;
+  
+  border-left: 6px solid var(--color-dark-background);
+  margin-top:4%;
+  z-index:1;
+  
+
+}
+.line{
+    border: 2px dashed #464646;
+     margin: 0 12px;
+
+}
+.footer{
+    display:flex;
+    justify-content:space-between;
+}
+.section{
+    display:flex;
+    justify-content:space-between;
+    margin-right: 170px;
+
+}
+#type{
+    height:3rem;
+    width:18.5%;
+    text-align:center;
+    justify-content:center;
+    border: 2px solid #333333;
+    background-color: transparent;
+    
+}
+.up,.down{
+    width:45px;
+    display:flex;
+justify-content: center;
+}
+
+@media only screen and (max-width: 600px){
+#type{
+    display:none;
+    
+}
+.section{
+    margin:0
+}
+.info{
+    margin:0 12px;
+    height:auto;
+    width:auto;
+}
+.speak{
+    width:400%;
+}
+.Card{
+    display:flex;
+    width:calc(100%-1rem);
+    overflow-x:scroll;
+    overflow-y:clip;
+    margin-left:1rem;
+    
+    height:300px;
+}
+.innerCard{
+    margin: 0;
+    
+}
+
+.card-img{
+    height:300px;
+   width:300px;
+}
+.name{
+    bottom: 49vw;
+    left: 4%;
+}
+.voteButton{
+    width:40%;
+    height:3.167rem;
+    
+}
+.vote{
+    bottom:92%;
+    left: 0;
+}
+.innerCard>*{
+    position:relative;
+    bottom:73vw;
+}
+.globalVotes{
+    bottom: 60vw;
+    width:30px;
+}
+.votesCalc{
+    bottom:165%;
+}
+.description{
+    width: 100%;
+    
+}
+.positive{
+    padding: 0;
+}
+
+.previous{
+    margin-left:1rem;
+}
+.opinion>.description{
+    position: relative;
+    right:12%;
+    width: 88%;
+
+}
+.addchar{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.introSurvey{
+    height:130%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.698864) 0%, rgba(0, 0, 0, 0.0001) 100%), url("https://res.cloudinary.com/dn1jeryp3/image/upload/v1652491411/Zemoga/francis_mhiwkw.png");
+   
+}
+header{
+    display: none;
+}
+.arrow-right{
+    left: 19.6%;
+    top: 27.5%;
+}
+.submit{
+    width:14rem;
+
+}
+
+}
